@@ -44,21 +44,19 @@ const Header = () => {
                                 setfirst(!show);
                             }}>Request a Qoute</a>
                             </li>
-                            <li className=' md:hidden'>  <button className=' bg-red py-4 px-5 rounded-[56px] font-Plus font-bold text-base leading-[20px] text-white'>
-                                <span>
+                            <li className=' md:hidden'>  <button className=' bg-red py-4 px-5 rounded-[56px] font-Plus font-bold text-base leading-[20px] text-white flex'>
                                     <Buttonicon />
-                                </span>
-                                (865) 621-1717
+                               <span>(865) 621-1717</span>
                             </button>
                             </li>
                         </ul>
-                        <button className=' bg-red py-4 px-5 rounded-[56px] font-Plus font-bold text-base leading-[20px] text-white hidden md:block'>
+                        <button className=' bg-red py-4 px-5 rounded-[56px] font-Plus font-bold text-base leading-[20px] text-white hidden md:flex gap-3'>
                             <span>
                                 <Buttonicon />
                             </span>
                             (865) 621-1717
                         </button>
-                        <div className="z-10 lg:hidden cursor-pointer " onClick={() => {
+                        <div className="z-10 bg-red lg:hidden cursor-pointer rounded-[10px] " onClick={() => {
                             setfirst(!show);
                         }}>
                             <span>{show === false ? <Navline /> : <Navcross />}</span>
